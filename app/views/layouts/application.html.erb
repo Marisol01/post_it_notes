@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+
+<%= render 'layouts/navbar' %>
+<%= yield %>
+
   <head>
     <title>PostItNotes</title>
     <%= csrf_meta_tags %>
@@ -11,7 +15,6 @@
 
   <body>
 
-    <%= render 'layouts/navbar' %>
-    <%= yield %>
+
   </body>
 </html>

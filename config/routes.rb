@@ -1,3 +1,5 @@
+
+
 Rails.application.routes.draw do
   # get 'note/index'
   # get 'note/show'
