@@ -1,22 +1,27 @@
 
 
-# <h1>Notes</h1>
+<h1>Notes</h1>
 
 # <% @notes.each do |note| %>
 
-#   <%= note.title %>
-#   <%= link_to 'Show Note', note_path(note) %>
-#   <%= link_to 'Edit Note', edit_note_path(note) %>
-#   <%= link_to 'Delete Note', note, method: :delete %>
+#   # <%= note.title %>
+#   # <%= link_to 'Show Note', note_path(note) %>
+#   # <%= link_to 'Edit Note', edit_note_path(note) %>
+#   # <%= link_to 'Delete Note', note, method: :delete %>
  
 
-#   <% end %>
+#   # <% end %>
 
-#   <%= link_to 'New Note', new_note_path %>
-#   <%= link_to 'Edit Note', edit_note_path(note) %>
+#   # <%= link_to 'New Note', new_note_path %>
+#   # <%= link_to 'Edit Note', edit_note_path(note) %>
 
 <% @notes.each do |note| %>
   <%= link_to "Show Note", note_path(note) %>
   <%= link_to 'New Note', new_note_path %>
+  <%= link_to 'Home', root_path %>
+  <%= link_to 'About', about_path %>
+  <%= link_to 'Notes', notes_path %>
 <% end %>
+
+
 
